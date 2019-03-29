@@ -7,5 +7,11 @@ exports.seed = function(knex, Promise) {
           dish_id:1,
           shop_list:1,
         },
+        {
+          name:'Fish Tacos', 
+          howto:'this is how you cook Fish Tacos', 
+          dish_id:1,
+          shop_list:1,
+        },
       ]);
 };

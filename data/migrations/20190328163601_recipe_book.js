@@ -19,7 +19,7 @@ exports.up = function(knex, Promise) {
     .createTable('recipes', tbl => {
         tbl.increments();
         tbl.string('name').notNullable().unique();
-        tbl.string('howto').notNullable().unique();
+        tbl.string('howto').notNullable();
         tbl.integer('dish_id').unsigned()
             .references('id').inTable('dishes')
             .onUpdate('CASCADE').onDelete('RESTRICT');
